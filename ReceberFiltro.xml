@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fcrproc>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>3</ShowCmd>
+    <Flags>2</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-3,-3</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-3,-3</MinMaxPos>
+    <NormPos_1024x768_>0,1,320,241</NormPos_1024x768_>
+    <NormPos>0,1,320,241</NormPos>
+    <cbComboCaixa_ItemIndex>-1</cbComboCaixa_ItemIndex>
+    <cbForma_ItemIndex>-1</cbForma_ItemIndex>
+    <cbStatus_ItemIndex>-1</cbStatus_ItemIndex>
+    <edCliente_Text/>
+    <edCodCCusto_Text/>
+    <edCodCliente_Text/>
+    <edcodVendedor_Text/>
+    <Edit1_Text>Edit1</Edit1_Text>
+    <edTitulo_Text/>
+    <edValor_Text/>
+    <edVendedor_Text/>
+    <MinMaxPos_1360x738_>-1,-1,-3,-3</MinMaxPos_1360x738_>
+    <NormPos_1360x738_>0,1,320,241</NormPos_1360x738_>
+    <MinMaxPos_1366x768_>-1,-1,-3,-3</MinMaxPos_1366x768_>
+    <NormPos_1366x768_>0,1,320,241</NormPos_1366x768_>
+  </fcrproc>
+</Configuration>

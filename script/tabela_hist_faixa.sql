@@ -1,0 +1,10 @@
+CREATE TABLE HIST_FAIXA (
+  CODCLIENTE             INTEGER                NOT NULL
+, COD_FAIXA              INTEGER                NOT NULL
+, VALOR                  DOUBLE PRECISION
+, DATA_MOV               DATE                   NOT NULL
+, SOCIO_NUMERO           SMALLINT
+, DATACADASTRO           DATE
+, CONSTRAINT PK_HIST_FAIXA
+    PRIMARY KEY ( CODCLIENTE, COD_FAIXA, DATA_MOV )
+)

@@ -1,0 +1,93 @@
+ALTER PROCEDURE  PAGTOX
+RETURNS ( DP                               SMALLINT
+        , DUP_REC_NF                       VARCHAR( 15 )
+        , TITULO                           VARCHAR( 18 )
+        , VALORTITULO                      DOUBLE PRECISION
+        , VALOR_RESTO                      DOUBLE PRECISION
+        , VALOR_PRIM_VIA                   DOUBLE PRECISION
+        , VALORRECEBIDO                    DOUBLE PRECISION
+        , EMISSAO                          DATE
+        , DATACONSOLIDA                    DATE
+        , CAIXA                            SMALLINT
+        , FORMAPAGAMENTO                   CHAR( 1 )
+        , DATAVENCIMENTO                   DATE
+        , CODFORNECEDOR                    INTEGER
+        , VALORREC                         DOUBLE PRECISION
+        , STATUS                           CHAR( 16 )
+        , DATAPAGAMENTO                    DATE
+        , DATAINCLUSAO                     DATE
+        , VIA                              CHAR( 4 )
+        , N_DOCUMENTO                      VARCHAR( 20 )
+        , NOMEFORNECEDOR                   VARCHAR( 60 )
+        , PLANO                            VARCHAR( 200 ) )
+AS
+BEGIN
+  FOR
+    select
+      rec.dp, rec.dup_rec_nf,  rec.TITULO, rec.EMISSAO,rec.DATACONSOLIDA ,rec.CAIXA , rec.FORMAPAGAMENTO ,
+      rec.DATAVENCIMENTO ,rec.CODFORNECEDOR,
+      sum(rec.VALORTITULO) as VALORTITULO ,
+      sum(rec.VALOR_RESTO) as VALOR_RESTO ,
+      sum(rec.VALOR_PRIM_VIA) as VALOR_PRIM_VIA ,
+      CASE rec.STATUS WHEN '5-' THEN 'PENDENTE' when '6-' then 'PENDENTE CONTAB.' when '7-' then 'PAGO'  when '8-' then 'SUSPENSO' END AS STATUS,
+      rec.DATAPAGAMENTO,rec.DATAINCLUSAO,
+      sum(rec.VALORRECEBIDO + CASE when FUNRURAL > 0 then FUNRURAL else 0 end + CASE when JUROS > 0 then JUROS else 0 end) as VALORRECEBIDO,
+      rec.VIA, rec.N_DOCUMENTO  , cli.NOMEFORNECEDOR,
+      SUM(rec.VALOR_RESTO - rec.VALORRECEBIDO - rec.DESCONTO - rec.PERDA ) as VALORREC  ,  plano.NOME
+    from pagamento rec
+    right outer join plano on (rec.caixa = plano.codigo)
+    inner join fornecedor cli on (rec.codfornecedor = cli.codfornecedor)
+    where
+       rec.datavencimento between '01/01/12' and '12/31/12'
+       and rec.n_documento = 'REM. 000089'
+       and rec.codfornecedor = 1
+       and titulo = '22891'
+       and rec.valortitulo > 0
+    group by cli.NOMEFORNECEDOR,rec.DATAVENCIMENTO,  rec.CODFORNECEDOR,rec.CAIXA , rec.formapagamento ,
+    rec.EMISSAO,  rec.TITULO,   rec.STATUS, rec.DATAPAGAMENTO,   rec.VIA, rec.N_DOCUMENTO,
+    rec.dp, rec.dup_rec_nf ,plano.NOME ,rec.DATACONSOLIDA ,rec.DATAINCLUSAO
+
+    INTO :DP,:DUP_REC_NF,:TITULO,:EMISSAO,:DATACONSOLIDA,:CAIXA,:FORMAPAGAMENTO,
+         :DATAVENCIMENTO,:CODFORNECEDOR,:VALORTITULO,:VALOR_RESTO,:VALOR_PRIM_VIA,
+         :STATUS,:DATAPAGAMENTO,:DATAINCLUSAO,:VALORRECEBIDO,:VIA,:N_DOCUMENTO,
+         :NOMEFORNECEDOR,:VALORREC,:PLANO
+  DO
+  BEGIN
+    SUSPEND;
+  END
+  FOR
+    select
+      rec.dp, rec.dup_rec_nf,  rec.TITULO, rec.EMISSAO,rec.DATACONSOLIDA ,rec.CAIXA , rec.FORMAPAGAMENTO ,
+      rec.DATAVENCIMENTO ,rec.CODFORNECEDOR,
+      sum(rec.VALORTITULO) as VALORTITULO ,
+      sum(rec.VALOR_RESTO) as VALOR_RESTO ,
+      sum(rec.VALOR_PRIM_VIA) as VALOR_PRIM_VIA ,
+      CASE rec.STATUS WHEN '5-' THEN 'PENDENTE' when '6-' then 'PENDENTE CONTAB.' when '7-' then 'PAGO'  when '8-' then 'SUSPENSO' END AS STATUS,
+      rec.DATAPAGAMENTO,rec.DATAINCLUSAO,
+      sum(rec.VALORRECEBIDO + CASE when FUNRURAL > 0 then FUNRURAL else 0 end + CASE when JUROS > 0 then JUROS else 0 end) as VALORRECEBIDO,
+      rec.VIA, rec.N_DOCUMENTO  , cli.NOMEFORNECEDOR,
+      SUM(rec.VALOR_RESTO - rec.VALORRECEBIDO - rec.DESCONTO - rec.PERDA ) as VALORREC  ,  plano.NOME
+    from pagamento rec
+    right outer join plano on (rec.caixa = plano.codigo)
+    inner join fornecedor cli on (rec.codfornecedor = cli.codfornecedor)
+    where
+       rec.datavencimento between '01/01/12' and '12/31/12'
+       and rec.n_documento = 'REM. 000089'
+       and rec.codfornecedor = 1
+       and titulo = '22891'
+       and rec.valortitulo < 0
+    group by cli.NOMEFORNECEDOR,rec.DATAVENCIMENTO,  rec.CODFORNECEDOR,rec.CAIXA , rec.formapagamento ,
+    rec.EMISSAO,  rec.TITULO,   rec.STATUS, rec.DATAPAGAMENTO,   rec.VIA, rec.N_DOCUMENTO,
+    rec.dp, rec.dup_rec_nf ,plano.NOME ,rec.DATACONSOLIDA ,rec.DATAINCLUSAO
+
+    INTO :DP,:DUP_REC_NF,:TITULO,:EMISSAO,:DATACONSOLIDA,:CAIXA,:FORMAPAGAMENTO,
+         :DATAVENCIMENTO,:CODFORNECEDOR,:VALORTITULO,:VALOR_RESTO,:VALOR_PRIM_VIA,
+         :STATUS,:DATAPAGAMENTO,:DATAINCLUSAO,:VALORRECEBIDO,:VIA,:N_DOCUMENTO,
+         :NOMEFORNECEDOR,:VALORREC,:PLANO
+  DO
+  BEGIN
+   SUSPEND;
+  END
+
+END
+

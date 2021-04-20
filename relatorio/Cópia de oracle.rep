@@ -1,0 +1,164 @@
+object TRpReport
+  PageBackColor = 16777215
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'TESTE'
+      DatabaseAlias = 'ORACLE'
+      SQL = 
+        'select PALLETID, '#13#10'          INDICE,'#13#10'          MOV_CODEMP, '#13#10'  ' +
+        '        MOV_CODPRO, '#13#10'          LUSU_LOGUSU,'#13#10'          MOV_NTFI' +
+        'SC,'#13#10'          DATA_LANC,'#13#10'          STATUS,'#13#10'          SITUACAO' +
+        ','#13#10'          END_CODEND,'#13#10'          END_REFEND,'#13#10'          TPE_C' +
+        'ODIGO, '#13#10'          TPE_DESCRI,'#13#10'          PESO_ITEM,'#13#10'          ' +
+        'PESO_BRUTO,'#13#10'          QTDE_EMB from L_PACKLIST '#13#10' WHERE DATA_LA' +
+        'NC = :PDATA AND END_REFEND = :PCARRETA AND PALLETID = :PALLET'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'ORACLE'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'PDATA'
+      Value = 40084d
+      ParamType = rpParamDate
+      Datasets.Strings = (
+        'TESTE')
+      Description = 'Data'
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'PCARRETA'
+      Value = ''
+      Datasets.Strings = (
+        'TESTE')
+      Description = 'Carreta'
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'PALLET'
+      AllowNulls = False
+      Value = ''
+      Datasets.Strings = (
+        'TESTE')
+      Description = 'Pallet'
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection1
+      end
+      item
+        Section = TRpSection0
+      end
+      item
+        Section = TRpSection2
+      end>
+    Alias = 'TESTE'
+  end
+  object TRpSection0: TRpSection
+    Width = 11010
+    Height = 4560
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection1: TRpSection
+    Width = 11010
+    Height = 1701
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection2: TRpSection
+    Width = 11025
+    Height = 1701
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpfooter
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+end

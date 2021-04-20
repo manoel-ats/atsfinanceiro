@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fProcuraCheque>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>1</ShowCmd>
+    <Flags>0</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1024x768_>359,148,1151,717</NormPos_1024x768_>
+    <NormPos>359,148,1151,717</NormPos>
+    <cbConta_Text/>
+    <edCliente_Text/>
+    <edCodCliente_Text/>
+    <edNumeroDocumento_Text/>
+    <meDta3_Text>  /  /  </meDta3_Text>
+    <meDta4_Text>  /  /  </meDta4_Text>
+    <cbContaText/>
+    <edClienteText/>
+    <edCodClienteText/>
+    <edNumeroDocumentoText/>
+    <meDta3Text>  /  /  </meDta3Text>
+    <meDta4Text>  /  /  </meDta4Text>
+    <MinMaxPos_1280x800_>-1,-1,-1,-1</MinMaxPos_1280x800_>
+    <NormPos_1280x800_>359,148,1151,717</NormPos_1280x800_>
+    <MinMaxPos_1152x864_>-1,-1,-1,-1</MinMaxPos_1152x864_>
+    <NormPos_1152x864_>359,148,1151,717</NormPos_1152x864_>
+    <MinMaxPos_1440x900_>-1,-1,-1,-1</MinMaxPos_1440x900_>
+    <NormPos_1440x900_>359,148,1151,717</NormPos_1440x900_>
+    <MinMaxPos_1360x673_>-1,-1,-1,-1</MinMaxPos_1360x673_>
+    <NormPos_1360x673_>359,148,1151,717</NormPos_1360x673_>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>359,148,1151,717</NormPos_1360x768_>
+    <MinMaxPos_1360x738_>-1,-1,-1,-1</MinMaxPos_1360x738_>
+    <NormPos_1360x738_>359,148,1151,717</NormPos_1360x738_>
+    <MinMaxPos_1366x738_>-1,-1,-1,-1</MinMaxPos_1366x738_>
+    <NormPos_1366x738_>359,148,1151,717</NormPos_1366x738_>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <NormPos_1366x768_>359,148,1151,717</NormPos_1366x768_>
+  </fProcuraCheque>
+</Configuration>

@@ -1,0 +1,18 @@
+CREATE TABLE TABRETORNO (
+  ID                     CHAR( 2 )
+, TITULO                 CHAR( 5 )
+, VALOR                  CHAR( 11 )
+, CENTAVOS               CHAR( 2 )
+, VALORPG                CHAR( 11 )
+, CENTAVOSPG             CHAR( 2 )
+, DATA                   VARCHAR( 8 )
+, VALOR_JUROS            CHAR( 11 )
+, CENTAVOS_JUROS         CHAR( 2 )
+, VALOR_COM_JUROS        CHAR( 14 )
+, VALPG                  CHAR( 14 )
+, VALOR_MULTA            CHAR( 11 )
+, CENTAVOS_MULTA         CHAR( 2 )
+, VALOR_COM_MULTA        CHAR( 14 )
+,baixado                 char(1) 
+)
+

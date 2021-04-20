@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fRelatorioCaixa>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>1</ShowCmd>
+    <Flags>0</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1024x768_>268,107,800,449</NormPos_1024x768_>
+    <NormPos>425,133,989,581</NormPos>
+    <ComboBox1_Text>.PCMSO - Sicredi</ComboBox1_Text>
+    <ComboBox2_Text/>
+    <MaskEdit1_Text>01/03/19</MaskEdit1_Text>
+    <MaskEdit2_Text>31/03/19</MaskEdit2_Text>
+    <edCodCCusto_Text>PCMSO</edCodCCusto_Text>
+    <MinMaxPos_1280x800_>-1,-1,-1,-1</MinMaxPos_1280x800_>
+    <NormPos_1280x800_>268,107,800,449</NormPos_1280x800_>
+    <MinMaxPos_1152x864_>-1,-1,-1,-1</MinMaxPos_1152x864_>
+    <NormPos_1152x864_>268,107,800,449</NormPos_1152x864_>
+    <MinMaxPos_1440x900_>-1,-1,-1,-1</MinMaxPos_1440x900_>
+    <NormPos_1440x900_>268,107,800,449</NormPos_1440x900_>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>268,107,800,449</NormPos_1360x768_>
+    <MinMaxPos_1360x738_>-1,-1,-1,-1</MinMaxPos_1360x738_>
+    <NormPos_1360x738_>268,107,800,449</NormPos_1360x738_>
+    <MinMaxPos_1366x738_>-1,-1,-1,-1</MinMaxPos_1366x738_>
+    <NormPos_1366x738_>268,107,800,449</NormPos_1366x738_>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <NormPos_1366x768_>425,133,989,581</NormPos_1366x768_>
+  </fRelatorioCaixa>
+</Configuration>

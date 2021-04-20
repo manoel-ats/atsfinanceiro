@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fFiltroMovimento>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>1</ShowCmd>
+    <Flags>0</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1024x768_>9,1,1033,708</NormPos_1024x768_>
+    <NormPos>12,1,1378,708</NormPos>
+    <ComboBox1_Text/>
+    <edControle_Text/>
+    <meDta1_Text>  /  /  </meDta1_Text>
+    <meDta2_Text>  /  /  </meDta2_Text>
+    <meDta1_Date>30/12/1899</meDta1_Date>
+    <meDta2_Date>30/12/1899</meDta2_Date>
+    <Edit2_Text/>
+    <Edit3_Text/>
+    <Edit4_Text/>
+    <MaskEdit1_Text>   -    </MaskEdit1_Text>
+    <RadioGroup1_ItemIndex>3</RadioGroup1_ItemIndex>
+    <Edit8_Text/>
+    <edtNF_Text/>
+    <ComboBox2_Text/>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <NormPos_1366x768_>12,1,1378,708</NormPos_1366x768_>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>0,1,1024,708</NormPos_1360x768_>
+    <ComboBox1Text/>
+    <edControleText/>
+    <meDta1Date>30/12/1899</meDta1Date>
+    <meDta2Date>30/12/1899</meDta2Date>
+    <Edit2Text/>
+    <Edit3Text/>
+    <Edit4Text/>
+    <MaskEdit1Text>   -    </MaskEdit1Text>
+    <RadioGroup1ItemIndex>3</RadioGroup1ItemIndex>
+    <Edit8Text/>
+    <edtNFText/>
+    <ComboBox2Text/>
+  </fFiltroMovimento>
+</Configuration>

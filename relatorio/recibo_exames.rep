@@ -1,0 +1,1917 @@
+object TRpReport
+  GridWidth = 50
+  GridHeight = 50
+  Pagesize = rpPageSizeCustom
+  PageHeight = 8120
+  PageWidth = 5742
+  CustomPageHeight = 8419
+  PageBackColor = 2147483647
+  PreviewWindow = spwMaximized
+  LeftMargin = 57
+  TopMargin = 57
+  RightMargin = 57
+  BottomMargin = 57
+  PrinterSelect = pRpReportPrinter
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end
+    item
+      SubReport = TRpSubReport1
+    end>
+  DataInfo = <
+    item
+      Alias = 'IMPR'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from recibo_exames (:titular , :dta1,:numeros)'
+    end
+    item
+      Alias = 'IMPR1'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from recibo_exames (:titular , :dta1,:numeros)'
+    end
+    item
+      Alias = 'EMPRESA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from EMPRESA'
+    end
+    item
+      Alias = 'FORMAPGTO'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select distinct(formapgto) from recibo_exames (:titular , :dta1,' +
+        ':numeros)'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'TITULAR'
+      AllowNulls = False
+      Value = 'HELIR SERRALDO'
+      Datasets.Strings = (
+        'IMPR1'
+        'IMPR'
+        'FORMAPGTO')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'DTA1'
+      AllowNulls = False
+      Value = 43650d
+      ParamType = rpParamDate
+      Datasets.Strings = (
+        'IMPR'
+        'IMPR1'
+        'FORMAPGTO')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'NUMEROS'
+      AllowNulls = False
+      Value = '510'
+      Datasets.Strings = (
+        'IMPR'
+        'IMPR1'
+        'FORMAPGTO')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  Language = 0
+  PrinterFonts = rppfontsnever
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection1
+      end
+      item
+        Section = TRpSection4
+      end
+      item
+        Section = TRpSection0
+      end
+      item
+        Section = TRpSection5
+      end>
+    Alias = 'IMPR'
+  end
+  object TRpSection0: TRpSection
+    Width = 11925
+    Height = 227
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpShape2
+      end
+      item
+        Component = TRpExpression23
+      end
+      item
+        Component = TRpExpression2
+      end
+      item
+        Component = TRpExpression31
+      end
+      item
+        Component = TRpLabel1
+      end>
+    AutoContract = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection1: TRpSection
+    Width = 11520
+    Height = 0
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <>
+    AutoContract = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection4: TRpSection
+    Width = 11985
+    Height = 1935
+    SubReport = TRpSubReport0
+    GroupName = 'REL'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgheader
+    Components = <
+      item
+        Component = TRpShape14
+      end
+      item
+        Component = TRpLabel6
+      end
+      item
+        Component = TRpLabel9
+      end
+      item
+        Component = TRpLabel10
+      end
+      item
+        Component = TRpExpression0
+      end
+      item
+        Component = TRpExpression4
+      end
+      item
+        Component = TRpExpression13
+      end
+      item
+        Component = TRpExpression15
+      end
+      item
+        Component = TRpExpression16
+      end
+      item
+        Component = TRpLabel11
+      end
+      item
+        Component = TRpExpression18
+      end
+      item
+        Component = TRpExpression19
+      end
+      item
+        Component = TRpExpression20
+      end
+      item
+        Component = TRpLabel13
+      end
+      item
+        Component = TRpExpression22
+      end
+      item
+        Component = TRpLabel8
+      end
+      item
+        Component = TRpExpression1
+      end
+      item
+        Component = TRpLabel12
+      end
+      item
+        Component = TRpExpression10
+      end
+      item
+        Component = TRpLabel24
+      end
+      item
+        Component = TRpExpression32
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection5: TRpSection
+    Width = 11985
+    Height = 1245
+    SubReport = TRpSubReport0
+    GroupName = 'REL'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgfooter
+    Components = <
+      item
+        Component = TRpLabel0
+      end
+      item
+        Component = TRpShape20
+      end
+      item
+        Component = TRpLabel26
+      end
+      item
+        Component = TRpShape58
+      end
+      item
+        Component = TRpLabel15
+      end
+      item
+        Component = TRpExpression24
+      end
+      item
+        Component = TRpLabel16
+      end
+      item
+        Component = TRpLabel20
+      end
+      item
+        Component = TRpExpression29
+      end
+      item
+        Component = TRpLabel14
+      end
+      item
+        Component = TRpExpression36
+      end
+      item
+        Component = TRpExpression35
+      end
+      item
+        Component = TRpLabel27
+      end>
+    AutoExpand = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpShape14: TRpShape
+    Width = 11535
+    Height = 90
+    PosX = 0
+    PosY = -100
+    Shape = rpsHorzLine
+    PenWidth = 6
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpSubReport1: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection7
+      end
+      item
+        Section = TRpSection3
+      end
+      item
+        Section = TRpSection2
+      end
+      item
+        Section = TRpSection6
+      end>
+    Alias = 'IMPR1'
+  end
+  object TRpSection2: TRpSection
+    Width = 12420
+    Height = 227
+    SubReport = TRpSubReport1
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpShape32
+      end
+      item
+        Component = TRpExpression3
+      end
+      item
+        Component = TRpExpression26
+      end
+      item
+        Component = TRpExpression17
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection3: TRpSection
+    Width = 12480
+    Height = 2310
+    SubReport = TRpSubReport1
+    GroupName = 'IMPR1'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgheader
+    Components = <
+      item
+        Component = TRpLabel2
+      end
+      item
+        Component = TRpLabel3
+      end
+      item
+        Component = TRpLabel4
+      end
+      item
+        Component = TRpLabel5
+      end
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpExpression6
+      end
+      item
+        Component = TRpExpression7
+      end
+      item
+        Component = TRpExpression8
+      end
+      item
+        Component = TRpExpression9
+      end
+      item
+        Component = TRpLabel7
+      end
+      item
+        Component = TRpExpression11
+      end
+      item
+        Component = TRpExpression12
+      end
+      item
+        Component = TRpExpression14
+      end
+      item
+        Component = TRpExpression25
+      end
+      item
+        Component = TRpExpression21
+      end
+      item
+        Component = TRpLabel21
+      end
+      item
+        Component = TRpLabel22
+      end
+      item
+        Component = TRpLabel23
+      end
+      item
+        Component = TRpExpression30
+      end
+      item
+        Component = TRpExpression33
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection6: TRpSection
+    Width = 12585
+    Height = 1185
+    SubReport = TRpSubReport1
+    GroupName = 'IMPR1'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgfooter
+    Components = <
+      item
+        Component = TRpShape34
+      end
+      item
+        Component = TRpLabel46
+      end
+      item
+        Component = TRpLabel52
+      end
+      item
+        Component = TRpExpression27
+      end
+      item
+        Component = TRpLabel17
+      end
+      item
+        Component = TRpLabel18
+      end
+      item
+        Component = TRpLabel19
+      end
+      item
+        Component = TRpExpression28
+      end
+      item
+        Component = TRpExpression34
+      end
+      item
+        Component = TRpLabel25
+      end
+      item
+        Component = TRpLabel28
+      end
+      item
+        Component = TRpExpression37
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection7: TRpSection
+    Width = 10772
+    Height = 0
+    SubReport = TRpSubReport1
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpShape32: TRpShape
+    Width = 7650
+    Height = 105
+    PosX = 3105
+    PosY = 0
+    Shape = rpsHorzLine
+    PenWidth = 6
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpShape34: TRpShape
+    Width = 11505
+    Height = 75
+    PosX = 0
+    PosY = 0
+    Shape = rpsHorzLine
+    PenWidth = 0
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpLabel46: TRpLabel
+    Width = 1155
+    Height = 300
+    PosX = 5595
+    PosY = 895
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Atendente :'
+  end
+  object TRpLabel52: TRpLabel
+    Width = 5350
+    Height = 300
+    PosX = 227
+    PosY = 900
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10' Assinatura :______________________________________'
+  end
+  object TRpShape2: TRpShape
+    Width = 7800
+    Height = 105
+    PosX = 2550
+    PosY = 0
+    Shape = rpsHorzLine
+    PenWidth = 6
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpShape20: TRpShape
+    Width = 11505
+    Height = 75
+    PosX = 0
+    PosY = 0
+    Shape = rpsHorzLine
+    PenWidth = 0
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpLabel26: TRpLabel
+    Width = 1155
+    Height = 300
+    PosX = 5595
+    PosY = 795
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Atendente :'
+  end
+  object TRpShape58: TRpShape
+    Width = 11505
+    Height = 75
+    PosX = 45
+    PosY = 1100
+    PenStyle = 4
+    Shape = rpsHorzLine
+    PenWidth = 0
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpLabel0: TRpLabel
+    Width = 5350
+    Height = 300
+    PosX = 227
+    PosY = 800
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10' Assinatura :______________________________________'
+  end
+  object TRpExpression3: TRpExpression
+    Width = 4200
+    Height = 264
+    PosX = 3150
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR1.TIPOEXAME'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel3: TRpLabel
+    Width = 1860
+    Height = 300
+    PosX = 3645
+    PosY = 2050
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Referente ao Exame(s) :'
+  end
+  object TRpLabel4: TRpLabel
+    Width = 345
+    Height = 300
+    PosX = 4950
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'N'#186' :'
+  end
+  object TRpLabel5: TRpLabel
+    Width = 1005
+    Height = 300
+    PosX = 3645
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recibo'
+  end
+  object TRpExpression5: TRpExpression
+    Width = 1725
+    Height = 240
+    PosX = 227
+    PosY = 1070
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'IIF (EMPRESA.LOGRADOURO <> '#39#39', '#39'Compl.: '#39' + EMPRESA.LOGRADOURO +' +
+      ' '#39' - '#39', '#39#39') +'#13#10'IIF (EMPRESA.BAIRRO <> '#39#39', '#39'Bairro.: '#39' + EMPRESA.' +
+      'BAIRRO, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression6: TRpExpression
+    Width = 1725
+    Height = 225
+    PosX = 227
+    PosY = 1310
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'IIF (EMPRESA.CIDADE <> '#39#39', '#39'Cidade: '#39' + EMPRESA.CIDADE, '#39#39')+'#13#10'II' +
+      'F (EMPRESA.UF <> '#39#39', '#39' - Estado: '#39' + EMPRESA.UF, '#39#39') +'#13#10'IIF(EMPR' +
+      'ESA.CEP <> '#39#39', '#39' - Cep.: '#39' + EMPRESA.CEP, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression7: TRpExpression
+    Width = 2190
+    Height = 225
+    PosX = 7255
+    PosY = 670
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FONE <> '#39#39', '#39'Telefone: '#39' + EMPRESA.FONE, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression8: TRpExpression
+    Width = 2190
+    Height = 240
+    PosX = 7255
+    PosY = 1120
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FAX <> null, '#39'Fax.......:'#39' + EMPRESA.FAX, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression9: TRpExpression
+    Width = 2190
+    Height = 225
+    PosX = 7255
+    PosY = 895
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FONE_1 <> null, '#39'Telefone :'#39' + EMPRESA.FONE_1, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel7: TRpLabel
+    Width = 1095
+    Height = 225
+    PosX = 9700
+    PosY = 95
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Data Recibo :'
+  end
+  object TRpExpression11: TRpExpression
+    Width = 4335
+    Height = 240
+    PosX = 227
+    PosY = 555
+    Type1Font = poHelvetica
+    FontStyle = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Times New Roman'
+    LFontName = 'Helvetica'
+    Expression = 'EMPRESA.RAZAO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression12: TRpExpression
+    Width = 3330
+    Height = 225
+    PosX = 227
+    PosY = 845
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'EMPRESA.ENDERECO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression14: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9750
+    PosY = 350
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'M.DTA1'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel2: TRpLabel
+    Width = 1500
+    Height = 255
+    PosX = 8895
+    PosY = 2050
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'O Valor :'#10' Valor :'
+  end
+  object TRpLabel6: TRpLabel
+    Width = 1860
+    Height = 300
+    PosX = 2895
+    PosY = 1745
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Referente ao Exame(s) :'
+  end
+  object TRpLabel9: TRpLabel
+    Width = 345
+    Height = 300
+    PosX = 4950
+    PosY = 250
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'N'#186' :'
+  end
+  object TRpLabel10: TRpLabel
+    Width = 1005
+    Height = 300
+    PosX = 3595
+    PosY = 250
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recibo'
+  end
+  object TRpExpression0: TRpExpression
+    Width = 1725
+    Height = 240
+    PosX = 227
+    PosY = 1020
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'IIF (EMPRESA.LOGRADOURO <> '#39#39', '#39'Compl.: '#39' + EMPRESA.LOGRADOURO +' +
+      ' '#39' - '#39', '#39#39') +'#13#10'IIF (EMPRESA.BAIRRO <> '#39#39', '#39'Bairro.: '#39' + EMPRESA.' +
+      'BAIRRO, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression4: TRpExpression
+    Width = 1725
+    Height = 225
+    PosX = 227
+    PosY = 1260
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'IIF (EMPRESA.CIDADE <> '#39#39', '#39'Cidade: '#39' + EMPRESA.CIDADE, '#39#39')+'#13#10'II' +
+      'F (EMPRESA.UF <> '#39#39', '#39' - Estado: '#39' + EMPRESA.UF, '#39#39') +'#13#10'IIF(EMPR' +
+      'ESA.CEP <> '#39#39', '#39' - Cep.: '#39' + EMPRESA.CEP, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression13: TRpExpression
+    Width = 2190
+    Height = 225
+    PosX = 7255
+    PosY = 770
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FONE <> '#39#39', '#39'Telefone: '#39' + EMPRESA.FONE, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression15: TRpExpression
+    Width = 2190
+    Height = 240
+    PosX = 7255
+    PosY = 1220
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FAX <> null, '#39'Fax.......:'#39' + EMPRESA.FAX, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression16: TRpExpression
+    Width = 2190
+    Height = 225
+    PosX = 7255
+    PosY = 995
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF (EMPRESA.FONE_1 <> null, '#39'Telefone :'#39' + EMPRESA.FONE_1, '#39#39')'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression18: TRpExpression
+    Width = 4365
+    Height = 345
+    PosX = 227
+    PosY = 550
+    Type1Font = poHelvetica
+    FontStyle = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Times New Roman'
+    LFontName = 'Helvetica'
+    Expression = 'EMPRESA.RAZAO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression19: TRpExpression
+    Width = 3330
+    Height = 225
+    PosX = 227
+    PosY = 795
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'EMPRESA.ENDERECO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel13: TRpLabel
+    Width = 1500
+    Height = 255
+    PosX = 8595
+    PosY = 1755
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'O Valor :'#10' Valor :'
+  end
+  object TRpExpression23: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9135
+    PosY = 10
+    Type1Font = poHelvetica
+    FontSize = 8
+    Alignment = 2
+    DisplayFormat = ',##0.00'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.VALOR'
+    DisplayFormat = ',##0.00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression2: TRpExpression
+    Width = 4200
+    Height = 264
+    PosX = 2865
+    PosY = 20
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.TIPOEXAME'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression22: TRpExpression
+    Width = 2100
+    Height = 264
+    PosX = 5430
+    PosY = 260
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.NUMERO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression25: TRpExpression
+    Width = 2100
+    Height = 264
+    PosX = 5430
+    PosY = 110
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR1.NUMERO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression24: TRpExpression
+    Width = 1050
+    Height = 227
+    PosX = 9135
+    PosY = 110
+    Type1Font = poHelvetica
+    Alignment = 2
+    DisplayFormat = ',##0.00'
+    Aggregate = rpAgGroup
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.VALOR'
+    DisplayFormat = ',##0.00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel16: TRpLabel
+    Width = 750
+    Height = 227
+    PosX = 7545
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Total :'
+  end
+  object TRpLabel15: TRpLabel
+    Width = 390
+    Height = 227
+    PosX = 8445
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'R$ : '
+  end
+  object TRpLabel18: TRpLabel
+    Width = 750
+    Height = 300
+    PosX = 7955
+    PosY = 105
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Total :'
+  end
+  object TRpLabel19: TRpLabel
+    Width = 390
+    Height = 300
+    PosX = 8855
+    PosY = 105
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'R$ : '
+  end
+  object TRpExpression28: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9395
+    PosY = 105
+    Type1Font = poHelvetica
+    DisplayFormat = ',##0.00'
+    Aggregate = rpAgGroup
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR1.VALOR'
+    DisplayFormat = ',##0.00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression20: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9750
+    PosY = 450
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'M.DTA1'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel11: TRpLabel
+    Width = 1095
+    Height = 225
+    PosX = 9700
+    PosY = 245
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Data Recibo :'
+  end
+  object TRpLabel17: TRpLabel
+    Width = 1650
+    Height = 255
+    PosX = 105
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recebemos de :'
+  end
+  object TRpExpression27: TRpExpression
+    Width = 4200
+    Height = 264
+    PosX = 1605
+    PosY = 100
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.NOMECLIENTE'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression29: TRpExpression
+    Width = 4200
+    Height = 227
+    PosX = 1545
+    PosY = 55
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.NOMECLIENTE'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression1: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9720
+    PosY = 965
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'TODAY'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel12: TRpLabel
+    Width = 855
+    Height = 255
+    PosX = 7695
+    PosY = 250
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'1'#170' Via'
+  end
+  object TRpLabel8: TRpLabel
+    Width = 1095
+    Height = 225
+    PosX = 9700
+    PosY = 695
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Data Recibo :'#10'Data IMPRESS'#194'O :'
+  end
+  object TRpExpression21: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9720
+    PosY = 865
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'TODAY'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel21: TRpLabel
+    Width = 855
+    Height = 255
+    PosX = 7845
+    PosY = 100
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'2'#170' Via'
+  end
+  object TRpLabel22: TRpLabel
+    Width = 1095
+    Height = 225
+    PosX = 9700
+    PosY = 595
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Data Recibo :'#10'Data IMPRESS'#194'O :'
+  end
+  object TRpExpression10: TRpExpression
+    Width = 2100
+    Height = 264
+    PosX = 227
+    PosY = 1545
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'str('#39'CNPJ : '#39') + EMPRESA.CNPJ_CPF'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression30: TRpExpression
+    Width = 2100
+    Height = 264
+    PosX = 227
+    PosY = 1595
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'str('#39'CNPJ : '#39') + EMPRESA.CNPJ_CPF'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel23: TRpLabel
+    Width = 3855
+    Height = 300
+    PosX = 7245
+    PosY = 1345
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'recepcao@saudeholambra.com.br'
+  end
+  object TRpLabel24: TRpLabel
+    Width = 3855
+    Height = 300
+    PosX = 7245
+    PosY = 1445
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'recepcao@saudeholambra.com.br'
+  end
+  object TRpExpression26: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9295
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    Alignment = 2
+    DisplayFormat = ',##0.00'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR1.VALOR'
+    DisplayFormat = ',##0.00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression17: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 7755
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    Alignment = 2
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF(IMPR1.VALOR > 0 ,'#39'R$'#39',null  )'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression31: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 7500
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    Alignment = 2
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF(IMPR.VALOR < 0 ,null ,'#39'R$'#39'  )'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel1: TRpLabel
+    Width = 240
+    Height = 150
+    PosX = 10505
+    PosY = -55
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'.'
+  end
+  object TRpExpression32: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9765
+    PosY = 1220
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'TIME'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression33: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 9750
+    PosY = 1135
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'TIME'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression36: TRpExpression
+    Width = 2625
+    Height = 264
+    PosX = 8655
+    PosY = 455
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'FORMAPGTO.FORMAPGTO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel14: TRpLabel
+    Width = 1590
+    Height = 300
+    PosX = 6945
+    PosY = 455
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Forma Pagamento :'
+  end
+  object TRpExpression34: TRpExpression
+    Width = 2625
+    Height = 264
+    PosX = 8655
+    PosY = 555
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'FORMAPGTO.FORMAPGTO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel25: TRpLabel
+    Width = 1590
+    Height = 300
+    PosX = 6945
+    PosY = 555
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = #10'Forma Pagamento :'
+  end
+  object TRpLabel20: TRpLabel
+    Width = 1650
+    Height = 227
+    PosX = 105
+    PosY = 55
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recebemos de :'
+  end
+  object TRpLabel27: TRpLabel
+    Width = 1650
+    Height = 227
+    PosX = 105
+    PosY = 305
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recebemos de :'#10'CPF :'
+  end
+  object TRpExpression35: TRpExpression
+    Width = 2520
+    Height = 264
+    PosX = 900
+    PosY = 295
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.RG'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression37: TRpExpression
+    Width = 2520
+    Height = 264
+    PosX = 900
+    PosY = 295
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IMPR.RG'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel28: TRpLabel
+    Width = 1650
+    Height = 227
+    PosX = 105
+    PosY = 305
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'Recebemos de :'#10'CPF :'
+  end
+end

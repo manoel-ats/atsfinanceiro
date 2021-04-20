@@ -1,0 +1,649 @@
+object TRpReport
+  GridWidth = 57
+  GridHeight = 57
+  PageOrientation = rpOrientationLandscape
+  Pagesize = rpPageSizeCustom
+  PageHeight = 8120
+  PageWidth = 5742
+  PageBackColor = 16777215
+  PreviewWindow = spwMaximized
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'EMPRESA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from Empresa'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'LOTE'
+      Value = 0
+      ParamType = rpParamInteger
+      Datasets.Strings = (
+        'GUIAS')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection1
+      end
+      item
+        Section = TRpSection0
+      end>
+    Alias = 'EMPRESA'
+  end
+  object TRpSection0: TRpSection
+    Width = 14280
+    Height = 8205
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpLabel0
+      end
+      item
+        Component = TRpLabel1
+      end
+      item
+        Component = TRpLabel2
+      end
+      item
+        Component = TRpLabel3
+      end
+      item
+        Component = TRpLabel4
+      end
+      item
+        Component = TRpLabel5
+      end
+      item
+        Component = TRpLabel6
+      end
+      item
+        Component = TRpLabel7
+      end
+      item
+        Component = TRpLabel8
+      end
+      item
+        Component = TRpLabel9
+      end
+      item
+        Component = TRpLabel10
+      end
+      item
+        Component = TRpLabel11
+      end
+      item
+        Component = TRpLabel12
+      end
+      item
+        Component = TRpLabel13
+      end
+      item
+        Component = TRpLabel14
+      end
+      item
+        Component = TRpLabel15
+      end
+      item
+        Component = TRpLabel16
+      end
+      item
+        Component = TRpLabel17
+      end
+      item
+        Component = TRpLabel18
+      end
+      item
+        Component = TRpLabel19
+      end
+      item
+        Component = TRpLabel20
+      end
+      item
+        Component = TRpLabel21
+      end
+      item
+        Component = TRpLabel22
+      end
+      item
+        Component = TRpLabel23
+      end
+      item
+        Component = TRpLabel24
+      end
+      item
+        Component = TRpLabel25
+      end
+      item
+        Component = TRpLabel26
+      end
+      item
+        Component = TRpLabel27
+      end
+      item
+        Component = TRpLabel28
+      end
+      item
+        Component = TRpLabel29
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection1: TRpSection
+    Width = 12375
+    Height = 1215
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpExpression6
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpExpression6: TRpExpression
+    Width = 1950
+    Height = 225
+    PosX = 2070
+    PosY = 460
+    Type1Font = poHelvetica
+    FontStyle = 1
+    Alignment = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'IIF(EMPRESA.EMPRESA <> null, EMPRESA.EMPRESA, null)'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression5: TRpExpression
+    Width = 2295
+    Height = 345
+    PosX = 7935
+    PosY = 345
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'str(day(TODAY)) + '#39' de '#39' + monthname(TODAY) + '#39' de '#39' + str(year(' +
+      'TODAY))'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel0: TRpLabel
+    Width = 735
+    Height = 285
+    PosX = 6615
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 0'
+  end
+  object TRpLabel1: TRpLabel
+    Width = 630
+    Height = 285
+    PosX = 8490
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 1'
+  end
+  object TRpLabel2: TRpLabel
+    Width = 855
+    Height = 345
+    PosX = 10713
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 2'
+  end
+  object TRpLabel3: TRpLabel
+    Width = 630
+    Height = 345
+    PosX = 1650
+    PosY = 6039
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '3'
+  end
+  object TRpLabel4: TRpLabel
+    Width = 795
+    Height = 405
+    PosX = 5535
+    PosY = 6036
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 4'
+  end
+  object TRpLabel5: TRpLabel
+    Width = 675
+    Height = 285
+    PosX = 11679
+    PosY = 6039
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 5 '
+  end
+  object TRpLabel6: TRpLabel
+    Width = 735
+    Height = 285
+    PosX = 9060
+    PosY = 6039
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 6'
+  end
+  object TRpLabel7: TRpLabel
+    Width = 855
+    Height = 225
+    PosX = 2505
+    PosY = 6324
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 7'
+  end
+  object TRpLabel8: TRpLabel
+    Width = 1140
+    Height = 225
+    PosX = 11679
+    PosY = 6834
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 8 '
+  end
+  object TRpLabel9: TRpLabel
+    Width = 750
+    Height = 285
+    PosX = 11679
+    PosY = 7641
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 9'
+  end
+  object TRpLabel10: TRpLabel
+    Width = 7365
+    Height = 285
+    PosX = 285
+    PosY = 6846
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 10'
+  end
+  object TRpLabel11: TRpLabel
+    Width = 1875
+    Height = 345
+    PosX = 345
+    PosY = 2736
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '11'
+  end
+  object TRpLabel12: TRpLabel
+    Width = 450
+    Height = 285
+    PosX = 11970
+    PosY = 1146
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 12'
+  end
+  object TRpLabel13: TRpLabel
+    Width = 630
+    Height = 225
+    PosX = 3420
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 13'
+  end
+  object TRpLabel14: TRpLabel
+    Width = 915
+    Height = 285
+    PosX = 12195
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 14'
+  end
+  object TRpLabel15: TRpLabel
+    Width = 855
+    Height = 225
+    PosX = 1365
+    PosY = 120
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ' 15'
+  end
+  object TRpLabel16: TRpLabel
+    Width = 1305
+    Height = 285
+    PosX = 345
+    PosY = 1026
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '36078-3'
+  end
+  object TRpLabel17: TRpLabel
+    Width = 4170
+    Height = 225
+    PosX = 2220
+    PosY = 1026
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'ASH ASSOCIA'#199#195'O SAUDE HOLAMBRA'
+  end
+  object TRpLabel18: TRpLabel
+    Width = 2040
+    Height = 285
+    PosX = 7122
+    PosY = 1026
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '59.007.799.0001/90'
+  end
+  object TRpLabel19: TRpLabel
+    Width = 675
+    Height = 450
+    PosX = 9924
+    PosY = 1140
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ''
+  end
+  object TRpLabel20: TRpLabel
+    Width = 285
+    Height = 285
+    PosX = 5076
+    PosY = 2451
+    Type1Font = poHelvetica
+    FontSize = 12
+    FontStyle = 1
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'X'
+  end
+  object TRpLabel21: TRpLabel
+    Width = 4095
+    Height = 345
+    PosX = 3765
+    PosY = 1716
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = 'HOSPITAL VERA CRUZ S/A'
+  end
+  object TRpLabel22: TRpLabel
+    Width = 1080
+    Height = 285
+    PosX = 1365
+    PosY = 1656
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '36048-1'
+  end
+  object TRpLabel23: TRpLabel
+    Width = 570
+    Height = 285
+    PosX = 8325
+    PosY = 2736
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '341'
+  end
+  object TRpLabel24: TRpLabel
+    Width = 1140
+    Height = 345
+    PosX = 9465
+    PosY = 2733
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '000-9'
+  end
+  object TRpLabel25: TRpLabel
+    Width = 1650
+    Height = 285
+    PosX = 11055
+    PosY = 2733
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '54469-3'
+  end
+  object TRpLabel26: TRpLabel
+    Width = 855
+    Height = 285
+    PosX = 1650
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '26'
+  end
+  object TRpLabel27: TRpLabel
+    Width = 690
+    Height = 285
+    PosX = 1650
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '27'
+  end
+  object TRpLabel28: TRpLabel
+    Width = 285
+    Height = 285
+    PosX = 5070
+    PosY = 4224
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '1'
+  end
+  object TRpLabel29: TRpLabel
+    Width = 1260
+    Height = 225
+    PosX = 12027
+    PosY = 1821
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '2078376'
+  end
+end

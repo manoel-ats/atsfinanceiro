@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fNotaFiscalExporta>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>1</ShowCmd>
+    <Flags>0</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1024x768_>13,31,1011,737</NormPos_1024x768_>
+    <NormPos>13,31,1011,737</NormPos>
+    <data1_Date>01/08/2008</data1_Date>
+    <data2_Date>01/08/2008</data2_Date>
+  </fNotaFiscalExporta>
+</Configuration>

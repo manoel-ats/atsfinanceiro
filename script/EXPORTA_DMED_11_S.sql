@@ -1,0 +1,97 @@
+CREATE OR ALTER PROCEDURE EXPORTA_DMED_11_S (
+    titular varchar(50))
+returns (
+    codcliente integer,
+    ra varchar(10),
+    razaosocial varchar(50),
+    cpf varchar(18),
+    nomecliente varchar(50),
+    vlr_mensal double precision,
+    clir integer,
+    nomefornecedorr varchar(60),
+    tipofirma varchar(1),
+    cnpjr varchar(18),
+    nomer varchar(50),
+    valorr double precision,
+    valorrn double precision,
+    valorrp double precision,
+    valor_total double precision,
+    clirp integer,
+    nomerp varchar(50),
+    valorrp1 double precision,
+    valor_recibo double precision)
+as
+declare variable imprimiu char(1);
+BEGIN
+
+  FOR
+    select 
+    dm.codcliente,dm.ra,dm.cpf,dm.razaosocial,dm.nomecliente, sum(dm.vlr_mensal)
+    from dmed_mensalidade_s  dm  where dm.razaosocial = :titular
+    group by
+    dm.codcliente,dm.ra,dm.cpf,dm.razaosocial,dm.nomecliente
+    ORDER BY dm.razaosocial
+    INTO :CODCLIENTE,:RA,:CPF,:RAZAOSOCIAL,:NOMECLIENTE,:VLR_MENSAL
+  DO
+  BEGIN
+  imprimiu = 'N';
+  valorRN = 0;
+  valorrp = 0;
+  valor_total = 0;
+  valorrp1 = 0;
+  cliRp = 0;
+  clir = 0;
+    for
+      select
+      cod_cliente , nomecliente1 ,  sum(preco)
+      from lan_dmed_s  where lan_dmed_s.cod_cliente = :CODCLIENTE and lan_dmed_s.preco > 0
+      group by
+      cod_cliente ,  nomecliente1
+      INTO :cliRp , :nomeRp ,:valorRp1
+    do
+    begin
+      imprimiu = 'S';
+      valor_total = VLR_MENSAL + valorRP1;
+
+      SUSPEND;
+      VLR_MENSAL = 0;
+      valor_total = 0 ;
+      valorrp1 = 0;
+
+    END
+
+    for
+      select
+      cod_cliente ,nomefornecedor,tipofirma, cnpj , nomecliente1 ,  sum(preco) , sum(valor_recibo)
+      from lan_dmed_s  where lan_dmed_s.cod_cliente = :CODCLIENTE and lan_dmed_s.preco < 0
+      group by
+      cod_cliente ,nomefornecedor,tipofirma,cnpj, nomecliente1
+      INTO :cliR , :nomefornecedorR ,:tipofirma,:cnpjR ,:nomeR ,:valorR ,:valor_recibo
+    do
+    begin
+      imprimiu = 'S';
+      valor_total = VLR_MENSAL ;
+      cliRp = null ;
+      if (cliRp is null ) then
+      cliRp = 0;
+      SUSPEND;
+      VLR_MENSAL = 0;
+      valor_total = 0 ;
+      valorrp1 = 0;
+      cliR = null ;
+      if (cliR is null ) then
+      cliR = 0;
+      nomefornecedorR = null;
+      tipofirma = null;
+      cnpjR = null ;
+      nomeR = null ;
+      valorr = 0;
+      valor_recibo = 0;
+
+   end
+    if(valor_total = 0) then
+    valor_total = VLR_MENSAL;
+    if(imprimiu = 'N' )then
+    SUSPEND;
+  END
+END

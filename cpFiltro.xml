@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fCpProcS>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>3</ShowCmd>
+    <Flags>2</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1366x768_>-1,-1,-3,-3</MinMaxPos_1366x768_>
+    <MinMaxPos>-1,-1,-3,-3</MinMaxPos>
+    <NormPos_1366x768_>25,25,345,265</NormPos_1366x768_>
+    <NormPos>25,25,345,265</NormPos>
+    <cbConta_Text/>
+    <cbForma_ItemIndex>-1</cbForma_ItemIndex>
+    <cbStatus_ItemIndex>-1</cbStatus_ItemIndex>
+    <cbTipoFornecedor_ItemHeight>0</cbTipoFornecedor_ItemHeight>
+    <edCliente_Text/>
+    <edCodCCusto_Text/>
+    <edCodCliente_Text/>
+    <edcodVendedor_Text/>
+    <Edit1_Text>Edit1</Edit1_Text>
+    <edNumeroDocumento_Text/>
+    <edTitulo_Text/>
+    <edValor_Text/>
+    <edVendedor_Text/>
+    <meDta1_Text>  /  /  </meDta1_Text>
+    <meDta2_Text>  /  /  </meDta2_Text>
+    <meDta3_Text>  /  /  </meDta3_Text>
+    <meDta4_Text>  /  /  </meDta4_Text>
+    <meDta5_Text>  /  /  </meDta5_Text>
+    <meDta6_Text>  /  /  </meDta6_Text>
+    <edCodCCusto_ItemIndex>-1</edCodCCusto_ItemIndex>
+    <rbTipoConta_ItemIndex>2</rbTipoConta_ItemIndex>
+    <cbContaText/>
+    <cbFormaItemIndex>-1</cbFormaItemIndex>
+    <cbStatusItemIndex>-1</cbStatusItemIndex>
+    <cbTipoFornecedorItemHeight>0</cbTipoFornecedorItemHeight>
+    <edClienteText/>
+    <edCodCCustoText/>
+    <edCodClienteText/>
+    <edcodVendedorText/>
+    <Edit1Text>Edit1</Edit1Text>
+    <edNumeroDocumentoText/>
+    <edTituloText/>
+    <edValorText/>
+    <edVendedorText/>
+    <meDta1Text>  /  /  </meDta1Text>
+    <meDta2Text>  /  /  </meDta2Text>
+    <meDta3Text>  /  /  </meDta3Text>
+    <meDta4Text>  /  /  </meDta4Text>
+    <meDta5Text>  /  /  </meDta5Text>
+    <meDta6Text>  /  /  </meDta6Text>
+    <edCodCCustoItemIndex>-1</edCodCCustoItemIndex>
+    <rbTipoContaItemIndex>2</rbTipoContaItemIndex>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>129,125,449,365</NormPos_1360x768_>
+    <MinMaxPos_1024x768_>-1,-1,-3,-3</MinMaxPos_1024x768_>
+    <NormPos_1024x768_>26,26,346,266</NormPos_1024x768_>
+  </fCpProcS>
+  <fCpProc>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>3</ShowCmd>
+    <Flags>2</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1366x768_>410,184,1208,735</NormPos_1366x768_>
+    <NormPos>410,184,1208,735</NormPos>
+    <cbConta_Text/>
+    <cbForma_ItemIndex>-1</cbForma_ItemIndex>
+    <cbStatus_ItemIndex>3</cbStatus_ItemIndex>
+    <cbTipoFornecedor_ItemHeight>16</cbTipoFornecedor_ItemHeight>
+    <edCliente_Text/>
+    <edCodCCusto_Text>PCMSO</edCodCCusto_Text>
+    <edCodCliente_Text/>
+    <edcodVendedor_Text/>
+    <Edit1_Text>Edit1</Edit1_Text>
+    <edNumeroDocumento_Text/>
+    <edTitulo_Text/>
+    <edValor_Text/>
+    <edVendedor_Text/>
+    <meDta1_Text>  /  /  </meDta1_Text>
+    <meDta2_Text>  /  /  </meDta2_Text>
+    <meDta3_Text>  /  /  </meDta3_Text>
+    <meDta4_Text>  /  /  </meDta4_Text>
+    <meDta5_Text>  /  /  </meDta5_Text>
+    <meDta6_Text>  /  /  </meDta6_Text>
+    <edCodCCusto_ItemIndex>1</edCodCCusto_ItemIndex>
+    <rbTipoConta_ItemIndex>0</rbTipoConta_ItemIndex>
+  </fCpProc>
+</Configuration>

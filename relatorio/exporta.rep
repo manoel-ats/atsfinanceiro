@@ -1,0 +1,168 @@
+object TRpReport
+  Pagesize = rpPageSizeCustom
+  PageHeight = 8120
+  PageWidth = 5742
+  PageBackColor = 2147483647
+  PreviewWindow = spwMaximized
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'EMPRESA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from Empresa'
+    end
+    item
+      Alias = 'CLIENTES'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select    '#13#10' NOMECLIENTE                '#13#10', CNPJ                ' +
+        ' '#13#10', INSCESTADUAL         '#13#10', DATACADASTRO'#13#10', STATUS '#13#10', CASE WH' +
+        'EN STATUS = 0  THEN '#39'ATIVO'#39' WHEN STATUS = 1 THEN '#39'DESLIGADO'#39' end' +
+        ' as STATUS'#13#10'                     '#13#10', DATANASC           '#13#10'    '#13#10 +
+        ', NOMEMAE               '#13#10', RA            '#13#10#13#10'from CLIENTES  WHE' +
+        'RE GRUPO_CLIENTE = '#39'ASH'#39' AND STATUS = 0'#13#10'order by RA'#13#10
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'LOJA'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end
+    item
+      Alias = 'SGE'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'ASPA'
+      Value = #39
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'O'
+      AllowNulls = False
+      Value = '`'
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection0
+      end>
+    Alias = 'CLIENTES'
+  end
+  object TRpSection0: TRpSection
+    Width = 14760
+    Height = 270
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpShape0
+      end
+      item
+        Component = TRpExpression6
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpShape0: TRpShape
+    Width = 10755
+    Height = 5
+    PosX = 0
+    PosY = 84
+    PenWidth = 0
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+  end
+  object TRpExpression6: TRpExpression
+    Width = 14610
+    Height = 225
+    PosX = 0
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    MultiPage = True
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      #39'INSERT INTO '#39' +M.O+ '#39'ASH'#39' + M.O +'#39'.'#39' +M.O+ '#39'CLIENTES'#39' + M.O + '#39 +
+      ' VALUES ( '#39#13#10'+ M.ASPA + CLIENTES.RA + M.ASPA +'#39','#39#13#10'+ M.ASPA + CL' +
+      'IENTES.NOMECLIENTE + M.ASPA +'#39','#39#13#10'+  M.ASPA +FormatSTR('#39'yyyy-mm-' +
+      'dd'#39',CLIENTES.DATANASC) + M.ASPA+'#39','#39#13#10'+  M.ASPA +FormatSTR('#39'yyyy-' +
+      'mm-dd'#39',CLIENTES.DATACADASTRO) + M.ASPA+'#39','#39#13#10'+ M.ASPA + CLIENTES.' +
+      'CNPJ + M.ASPA +'#39','#39#13#10'+ M.ASPA + CLIENTES.INSCESTADUAL + M.ASPA +'#39 +
+      ','#39#13#10'+ M.ASPA + CLIENTES.NOMEMAE + M.ASPA +'#39','#39#13#10'+ M.ASPA + CLIENT' +
+      'ES.STATUS + M.ASPA '#13#10#13#10#13#10'+ '#39')'#39' +'#39';'#39
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+end

@@ -1,0 +1,427 @@
+object TRpReport
+  PageHeight = 8120
+  PageWidth = 5742
+  PageBackColor = 2147483647
+  PreviewStyle = spEntirePage
+  PreviewWindow = spwMaximized
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'CR'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select  rec.TITULO, rec.EMISSAO, '#13#10' rec.DATAVENCIMENTO, rec.CODF' +
+        'ORNECEDOR, sum(rec.VALORTITULO)as VALORTITULO , sum(rec.VALOR_RE' +
+        'STO) as VALOR_RESTO , '#13#10'sum(rec.VALOR_PRIM_VIA) as VALOR_PRIM_VI' +
+        'A, '#13#10'rec.STATUS'#13#10', rec.DATAPAGAMENTO,sum(rec.VALORRECEBIDO) as V' +
+        'ALORRECEBIDO, rec.VIA, rec.N_DOCUMENTO ,rec.DATAINCLUSAO, udf_Mo' +
+        'nth(rec.DATAINCLUSAO) as mes , udf_year(rec.DATAINCLUSAO) as ano' +
+        ' '#13#10', udf_Month(rec.EMISSAO) as Emes,  udf_year(rec.EMISSAO) as E' +
+        'ano '#13#10' , cli.NOMEFORNECEDOR, sum(rec.VALORTITULO - rec.VALOR_RES' +
+        'TO) as VALORREC from PAGAMENTO rec'#13#10'inner join FORNECEDOR cli on' +
+        ' cli.CODFORNECEDOR=rec.CODFORNECEDOR  inner join PLANO plano on ' +
+        'plano.CODIGO = rec.CAIXA  '#13#10'--and  rec.CODFORNECEDOR = 28  '#13#10'--a' +
+        'nd rec.titulo = '#39'739'#39#13#10'where rec.DATAINCLUSAO between :datai and' +
+        ' :dataf AND (rec.STATUS = '#39'7-'#39') AND CODALMOXARIFADO = 51 and rec' +
+        '.CONTACREDITO in ( (340),(262),(163),(263),(300627),(770),(324),' +
+        '(383),(537),(538),(539),(341),(803),(541),(542),(543),(544),(548' +
+        '),(342),(549),(550),(551),(552),(553),(554),(555),(707),(557),(3' +
+        '43),(558),(559),(563),(564),(565),(566),(567),(669),(670),(344),' +
+        '(671),(672),(673),(674),(693),(677),(678),(679),(703),(704),(345' +
+        '),(698),(700),(709),(718),(721),(722),(732),(346),(742),(743),(7' +
+        '44),(747),(750),(751),(753),(759),(347),(755),(761),(762),(779),' +
+        '(788),(798),(804),(805),(348),(812),(813),(780),(797),(349),(817' +
+        '),(831),(350),(100201),(837),(270),(351),(271),(792),(876),(877)' +
+        ',(878),(856),(857),(879),(352),(880),(882),(353),(354),(355),(82' +
+        '2),(823),(852),(356),(357),(358),(359),(360),(293),(777),(778),(' +
+        '361),(362),(363),(364),(365),(366),(367),(368),(369),(370),(371)' +
+        ',(372),(373),(374),(375),(376),(377),(378),(335),(443),(444),(44' +
+        '5),(446),(447),(448),(449),(450),(451),(336),(452),(274),(453),(' +
+        '454),(272),(273),(455),(456),(457),(458),(459),(532),(460),(337)' +
+        ',(474),(477),(481),(482),(483),(486),(487),(488),(503),(508),(33' +
+        '8),(509),(514),(515),(518),(519),(521),(523),(339),(524),(438),(' +
+        '528),(530),(533),(534),(535),(536),(442),(531),(174),(246),(175)' +
+        ',(168),(169),(171),(808),(872),(568),(569),(570),(571),(572),(57' +
+        '3),(574),(575),(576),(577),(578),(579),(580),(581),(582),(583),(' +
+        '584),(585),(586),(587),(588),(589),(590),(591),(592),(593),(594)' +
+        ',(595),(643),(646),(647),(648),(662),(828),(858),(596),(597),(59' +
+        '8),(599),(601),(602),(603),(604),(605),(606),(607),(608),(609),(' +
+        '610),(611),(612),(613),(614),(615),(616),(617),(618),(650),(653)' +
+        ',(654),(655),(642),(644),(645),(649),(656),(660),(661),(663),(66' +
+        '4),(666),(683),(684),(685),(687),(688),(692),(694),(697),(701),(' +
+        '702),(705),(706),(711),(712),(713),(714),(715),(716),(717),(723)' +
+        ',(724),(725),(734),(735),(736),(737),(738),(739),(740),(748),(75' +
+        '4),(756),(757),(758),(766),(771),(774),(775),(781),(785),(786),(' +
+        '794),(795),(796),(799),(800),(816),(818),(819),(824),(826),(827)' +
+        ',(842),(844),(864),(871),(873),(881),(620),(621),(622),(623),(62' +
+        '4),(625),(626),(627),(628),(651),(652),(667),(629),(630),(631),(' +
+        '632),(633),(634),(635),(636),(637),(638),(639),(640),(641),(787)' +
+        ',(815),(833),(832),(884),(301),(333),(301343),(301483),(300),(30' +
+        '1),(30627),(30738),(30751),(691),(726),(745),(763),(696),(746),(' +
+        '305),(263))'#13#10'group by  rec.DATAVENCIMENTO , cli.NOMEFORNECEDOR, ' +
+        'rec.CODFORNECEDOR, rec.TITULO, rec.EMISSAO ,rec.DATAINCLUSAO, '#13#10 +
+        ' '#13#10'rec.STATUS'#13#10', rec.DATAPAGAMENTO, rec.VIA, rec.N_DOCUMENTO '#13#10#13 +
+        #10#13#10#13#10#13#10#13#10'/*'#13#10'select  rec.TITULO, rec.EMISSAO, '#13#10' rec.DATAVENCIME' +
+        'NTO, rec.CODFORNECEDOR, sum(rec.VALORTITULO)as VALORTITULO , sum' +
+        '(rec.VALOR_RESTO) as VALOR_RESTO , '#13#10'sum(rec.VALOR_PRIM_VIA) as ' +
+        'VALOR_PRIM_VIA, '#13#10'rec.STATUS'#13#10', rec.DATAPAGAMENTO,sum(rec.VALORR' +
+        'ECEBIDO) as VALORRECEBIDO, rec.VIA, rec.N_DOCUMENTO ,rec.DATAINC' +
+        'LUSAO'#13#10' , cli.NOMEFORNECEDOR, sum(rec.VALORTITULO - rec.VALOR_RE' +
+        'STO) as VALORREC from PAGAMENTO rec '#13#10' inner join FORNECEDOR cli' +
+        ' on cli.CODFORNECEDOR=rec.CODFORNECEDOR'#13#10' where rec.codfornecedo' +
+        'r =1 and rec.titulo = '#39'RP 18464'#39#13#10'group by rec.TITULO, rec.EMISS' +
+        'AO ,rec.DATAINCLUSAO, '#13#10' rec.DATAVENCIMENTO, rec.CODFORNECEDOR, ' +
+        #13#10'rec.STATUS'#13#10', rec.DATAPAGAMENTO, rec.VIA, rec.N_DOCUMENTO '#13#10' ,' +
+        ' cli.NOMEFORNECEDOR'#13#10#13#10#13#10'*/'
+    end
+    item
+      Alias = 'EMPRESA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from empresa'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end
+    item
+      Alias = 'SGE'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'DATAI'
+      AllowNulls = False
+      Value = 40909d
+      ParamType = rpParamDate
+      Datasets.Strings = (
+        'CR')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end
+    item
+      Name = 'DATAF'
+      AllowNulls = False
+      Value = 41274d
+      ParamType = rpParamDate
+      Datasets.Strings = (
+        'CR')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection0
+      end>
+    Alias = 'CR'
+  end
+  object TRpSection0: TRpSection
+    Width = 10772
+    Height = 285
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpExpression1
+      end
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpExpression17
+      end
+      item
+        Component = TRpExpression0
+      end
+      item
+        Component = TRpLabel0
+      end
+      item
+        Component = TRpExpression2
+      end
+      item
+        Component = TRpExpression3
+      end
+      item
+        Component = TRpExpression4
+      end
+      item
+        Component = TRpExpression6
+      end
+      item
+        Component = TRpLabel1
+      end
+      item
+        Component = TRpLabel2
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpExpression1: TRpExpression
+    Width = 810
+    Height = 225
+    PosX = 1500
+    PosY = 0
+    Type1Font = poHelvetica
+    Alignment = 4
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.EMISSAO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression5: TRpExpression
+    Width = 1035
+    Height = 225
+    PosX = 8970
+    PosY = 0
+    Type1Font = poHelvetica
+    Alignment = 2
+    DisplayFormat = '##0.00'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.VALORTITULO'
+    DisplayFormat = '##0.00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression17: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 4950
+    PosY = 0
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.DATAINCLUSAO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel0: TRpLabel
+    Width = 690
+    Height = 225
+    PosX = 0
+    PosY = 0
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = '360783 ;'
+  end
+  object TRpExpression2: TRpExpression
+    Width = 795
+    Height = 240
+    PosX = 6560
+    PosY = 0
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.ANO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression0: TRpExpression
+    Width = 810
+    Height = 240
+    PosX = 6325
+    PosY = 0
+    Type1Font = poHelvetica
+    DisplayFormat = '#00'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.MES'
+    DisplayFormat = '#00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression3: TRpExpression
+    Width = 795
+    Height = 240
+    PosX = 2995
+    PosY = 0
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.EANO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression4: TRpExpression
+    Width = 810
+    Height = 240
+    PosX = 2760
+    PosY = 0
+    Type1Font = poHelvetica
+    DisplayFormat = '#00'
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.EMES'
+    DisplayFormat = '#00'
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression6: TRpExpression
+    Width = 930
+    Height = 225
+    PosX = 7710
+    PosY = 5
+    Type1Font = poHelvetica
+    Alignment = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CR.TITULO'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpLabel1: TRpLabel
+    Width = 240
+    Height = 225
+    PosX = 4020
+    PosY = 0
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ';'
+  end
+  object TRpLabel2: TRpLabel
+    Width = 240
+    Height = 225
+    PosX = 8735
+    PosY = 0
+    Type1Font = poHelvetica
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    WideText = ';'
+  end
+end

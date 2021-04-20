@@ -1,0 +1,377 @@
+object TRpReport
+  GridWidth = 50
+  GridHeight = 50
+  Pagesize = rpPageSizeUser
+  PageHeight = 8120
+  PageWidth = 5742
+  PageBackColor = 2147483647
+  PreviewWindow = spwMaximized
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'EMPRESA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 'select * from Empresa'
+    end
+    item
+      Alias = 'CLIENTES'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select cli.CODCLIENTE, '#13#10'          cli.NOMECLIENTE,'#13#10'          c' +
+        'li.RAZAOSOCIAL ,         '#13#10'          cli.CONTATO,'#13#10'          cli' +
+        '.GRUPO_CLIENTE,'#13#10'          cli.RA,'#13#10'          udf_Left(cli.RA,5)' +
+        ','#13#10'          ende.TELEFONE, '#13#10'          ende.TELEFONE1,'#13#10'       ' +
+        '   ende.TELEFONE2,'#13#10'          ende.FAX,'#13#10'          ende.CIDADE'#13#10 +
+        #13#10'from CLIENTES cli '#13#10'left outer join ENDERECOCLIENTE ende on en' +
+        'de.CODCLIENTE=cli.CODCLIENTE  '#13#10'where cli.GRUPO_CLIENTE = '#39'PCMSO' +
+        #39' and cli.STATUS = 0 and cli.RAZAOSOCIAL <> cli.NOMECLIENTE   '#13#10 +
+        'and ((CLI.RAZAOSOCIAL  = :NOME) or (:NOME = '#39'TODOS AS EMPRESAS A' +
+        'TIVAS CADASTRADOS NO SISTEMA HJ'#39'))'#13#10'and cli.segmento = 1'#13#10'group ' +
+        'by cli.RAZAOSOCIAL,cli.RA,cli.NOMECLIENTE,'#13#10'          '#13#10'        ' +
+        '  cli.CODCLIENTE,           '#13#10'          cli.CONTATO,'#13#10'          ' +
+        'cli.GRUPO_CLIENTE,      '#13#10'          cli.RA,'#13#10'          ende.TELE' +
+        'FONE, '#13#10'          ende.TELEFONE1,'#13#10'          ende.TELEFONE2,'#13#10'  ' +
+        '        ende.FAX,'#13#10'          ende.CIDADE '#13#10#13#10
+    end
+    item
+      Alias = 'EMPRE'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select CLI.RAZAOSOCIAL,'#13#10'          CLI.RA'#13#10#13#10'from CLIENTES cli '#13 +
+        #10#13#10'where cli.GRUPO_CLIENTE = '#39'PCMSO'#39' and cli.STATUS = 0 and segm' +
+        'ento = 0 '#13#10#13#10
+      DataSource = 'CLIENTES'
+    end
+    item
+      Alias = 'CONTAR'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select count(cli.codcliente)'#13#10'          '#13#10'          '#13#10'from clien' +
+        'tes cli where cli.GRUPO_CLIENTE =  '#39'PCMSO'#39' and cli.status = 0 an' +
+        'd (CLI.RAZAOSOCIAL  = :RAZAOSOCIAL) and segmento = 1'
+      DataSource = 'CLIENTES'
+    end
+    item
+      Alias = 'SOMA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select count(NOMECLIENTE) from clientes where GRUPO_CLIENTE = '#39'P' +
+        'CMSO'#39' and STATUS = 0 and SEGMENTO = 0'
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'NOME'
+      Value = 'TODOS AS EMPRESAS ATIVAS CADASTRADOS NO SISTEMA HJ'
+      Datasets.Strings = (
+        'CLIENTES')
+      Description = ''
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection3
+      end
+      item
+        Section = TRpSection1
+      end
+      item
+        Section = TRpSection0
+      end
+      item
+        Section = TRpSection2
+      end>
+    Alias = 'CLIENTES'
+  end
+  object TRpSection0: TRpSection
+    Width = 10772
+    Height = 0
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <>
+    AutoExpand = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection3: TRpSection
+    Width = 10772
+    Height = 375
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecpheader
+    Components = <
+      item
+        Component = TRpExpression4
+      end
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpExpression0
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpExpression4: TRpExpression
+    Width = 3105
+    Height = 225
+    PosX = 255
+    PosY = 0
+    Type1Font = poHelvetica
+    FontStyle = 1
+    Alignment = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'IIF(EMPRESA.EMPRESA <> null, EMPRESA.EMPRESA, null) + '#39' :    PCM' +
+      'SO'#39
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression5: TRpExpression
+    Width = 2415
+    Height = 225
+    PosX = 7935
+    PosY = 0
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 
+      'str(day(TODAY)) + '#39' de '#39' + monthname(TODAY) + '#39' de '#39' + str(year(' +
+      'TODAY))'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpSection1: TRpSection
+    Width = 10772
+    Height = 240
+    SubReport = TRpSubReport0
+    GroupName = 'DEPENDENTE'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgheader
+    Components = <
+      item
+        Component = TRpExpression1
+      end
+      item
+        Component = TRpExpression2
+      end
+      item
+        Component = TRpExpression6
+      end>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = 'CLIENTES.RAZAOSOCIAL'
+    BeginPageExpression = '0'
+    ChangeExpression = 'CLIENTES.RAZAOSOCIAL'
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpSection2: TRpSection
+    Width = 10772
+    Height = 210
+    SubReport = TRpSubReport0
+    GroupName = 'DEPENDENTE'
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecgfooter
+    Components = <>
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = 'CLIENTES.RAZAOSOCIAL'
+    BeginPageExpression = ''
+    ChangeExpression = 'CLIENTES.RAZAOSOCIAL'
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpExpression2: TRpExpression
+    Width = 1185
+    Height = 255
+    PosX = 1495
+    PosY = -5
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CLIENTES.UDF_LEFT'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression6: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 7405
+    PosY = -5
+    Type1Font = poHelvetica
+    FontSize = 8
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = #39'TOTAL FUNCIONARIOS  ATIVOS : '#39' + STR(CONTAR.COUNT)'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression1: TRpExpression
+    Width = 4200
+    Height = 264
+    PosX = 2755
+    PosY = -5
+    Type1Font = poHelvetica
+    FontSize = 8
+    Alignment = 1
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'CLIENTES.RAZAOSOCIAL'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression0: TRpExpression
+    Width = 1050
+    Height = 264
+    PosX = 4800
+    PosY = 0
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = #39'Empresa : '#39' + str(SOMA.COUNT) + '#39' Ativas'#39
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+end

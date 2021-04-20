@@ -1,0 +1,1277 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/60/trunk/script
+END
+mov_EstoqueCorrige.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/mov_EstoqueCorrige.sql
+END
+AVISO_ASH_TODOS.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/112/trunk/script/AVISO_ASH_TODOS.sql
+END
+SP_MOV_CAIXA_ORDEM_DRE.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/SP_MOV_CAIXA_ORDEM_DRE.SQL
+END
+relDre_dnz.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/relDre_dnz.sql
+END
+INSERICLIFOR.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/INSERICLIFOR.sql
+END
+caixaItens.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/caixaItens.sql
+END
+atualiza_lista_de_precos.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/script/atualiza_lista_de_precos.sql
+END
+formata_doublePrecision.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/script/formata_doublePrecision.sql
+END
+CorrigeEstoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/CorrigeEstoque.sql
+END
+baixaTitulosPag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/baixaTitulosPag.sql
+END
+baixaTitulosRec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/baixaTitulosRec.sql
+END
+apaga_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/script/apaga_rec.sql
+END
+sp_mov_caixa_ash.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/121/trunk/script/sp_mov_caixa_ash.sql
+END
+insere_vlrBase.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/insere_vlrBase.sql
+END
+Trigger_insere_user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/Trigger_insere_user.sql
+END
+CONFERIR.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/138/trunk/script/CONFERIR.sql
+END
+isere_user
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/5/trunk/script/isere_user
+END
+tab_func_novos_campos.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/tab_func_novos_campos.sql
+END
+corrigeCCusto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/corrigeCCusto.sql
+END
+lote_exclui.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/5/trunk/script/lote_exclui.sql
+END
+RELCRPORVENCIMENTO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/122/trunk/script/RELCRPORVENCIMENTO.sql
+END
+gera_rec_duplicatas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/gera_rec_duplicatas.sql
+END
+fluxoentradasaidasintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/5/trunk/script/fluxoentradasaidasintetico.sql
+END
+SP_DELETA_MOVIMENTONF.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/SP_DELETA_MOVIMENTONF.SQL
+END
+spEstoqueFiltro_corrige.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/script/spEstoqueFiltro_corrige.sql
+END
+TRG_GERACOMISSAOGARCON.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/TRG_GERACOMISSAOGARCON.sql
+END
+CAIXAITENS_DRE.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/CAIXAITENS_DRE.SQL
+END
+RelVendaProdutoMes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/RelVendaProdutoMes.sql
+END
+entrada_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/entrada_estoque.sql
+END
+altera_contabil.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/altera_contabil.sql
+END
+sp_mov_caixa_ash_sintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa_ash_sintetico.sql
+END
+sp_contas_pagas_periodo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/script/sp_contas_pagas_periodo.sql
+END
+MOSTRAFUNCIONARIOS.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/MOSTRAFUNCIONARIOS.SQL
+END
+altera_venda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/altera_venda.sql
+END
+rel_rcbo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/script/rel_rcbo.sql
+END
+spestoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/script/spestoque.sql
+END
+tipoend_repetido.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/tipoend_repetido.sql
+END
+table_lotes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/5/trunk/script/table_lotes.sql
+END
+SP_MOV_CAIXA_ASH_DRE.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/SP_MOV_CAIXA_ASH_DRE.SQL
+END
+rel_icms.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/script/rel_icms.sql
+END
+sp_contas_pendentes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/sp_contas_pendentes.sql
+END
+trg_entrada_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/trg_entrada_estoque.sql
+END
+LANCA_REEMBOLSO_VEND.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/115/trunk/script/LANCA_REEMBOLSO_VEND.sql
+END
+sp_mov_caixaConsolida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/sp_mov_caixaConsolida.sql
+END
+relDre_checkupcar.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/relDre_checkupcar.sql
+END
+gera_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/script/gera_pag.sql
+END
+mov_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/5/trunk/script/mov_estoque.sql
+END
+gera_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/script/gera_rec.sql
+END
+sp_mov_caixa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa.sql
+END
+spEstoqueFiltro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/spEstoqueFiltro.sql
+END
+SPGERAMENSALIDADE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/197/trunk/script/SPGERAMENSALIDADE.sql
+END
+altera_compra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/altera_compra.sql
+END
+atualiza_furacao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/atualiza_furacao.sql
+END
+gera_parcelas_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/257/trunk/script/gera_parcelas_pag.sql
+END
+gera_parcelas_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/gera_parcelas_rec.sql
+END
+rel_compra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/rel_compra.sql
+END
+cnpj_repetido.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/cnpj_repetido.sql
+END
+recibo_cp.sql
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/script/recibo_cp.sql
+END
+sp_mov_caixaConsolidado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/script/sp_mov_caixaConsolidado.sql
+END
+trg_nf_cr_altera.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/trg_nf_cr_altera.sql
+END
+baixaTitulosPag_NEGATIVO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/113/trunk/script/baixaTitulosPag_NEGATIVO.sql
+END
+camposControleCaixa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/camposControleCaixa.sql
+END
+TOTAL_D_2015D.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/293/trunk/script/TOTAL_D_2015D.sql
+END
+dmed_antes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/153/trunk/script/dmed_antes.sql
+END
+fluxoCaixa.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/fluxoCaixa.sql
+END
+trg_saida_estoque
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/trg_saida_estoque
+END
+TOTAL_REC_DMED.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/293/trunk/script/TOTAL_REC_DMED.sql
+END
+cliente_etiqueta2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/cliente_etiqueta2.sql
+END
+sp_gera_mensalidade.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/sp_gera_mensalidade.sql
+END
+cliente_etiqueta4.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/cliente_etiqueta4.sql
+END
+BUSCA_GRUPO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/172/trunk/script/BUSCA_GRUPO.sql
+END
+inclui_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/inclui_pag.sql
+END
+caixaFechadoContabil.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/caixaFechadoContabil.sql
+END
+inclui_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/inclui_rec.sql
+END
+CaixaFechadoRecebimento.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/script/CaixaFechadoRecebimento.sql
+END
+altera_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/altera_estoque.sql
+END
+gera_nf_venda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/gera_nf_venda.sql
+END
+apaga_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/apaga_estoque.sql
+END
+Insere_dados_permissao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/Insere_dados_permissao.sql
+END
+tab_recebimento_via.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/tab_recebimento_via.sql
+END
+relContasReceber.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/relContasReceber.sql
+END
+trgDataConsolidaRecI.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/trgDataConsolidaRecI.sql
+END
+relNotaFiscal.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/relNotaFiscal.sql
+END
+saida_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/saida_estoque.sql
+END
+exportaNotaFiscal.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/exportaNotaFiscal.sql
+END
+TRG_GERACOMISSAO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/TRG_GERACOMISSAO.sql
+END
+gera_rec_nf.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/5/trunk/script/gera_rec_nf.sql
+END
+sp_mov_caixa_ordemConsolida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa_ordemConsolida.sql
+END
+novoscamposcliente.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/novoscamposcliente.txt
+END
+relatorio_dmed_2011.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/122/trunk/script/relatorio_dmed_2011.sql
+END
+relDreSintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/relDreSintetico.sql
+END
+atualiza_dataConsolida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/atualiza_dataConsolida.sql
+END
+EMPRESAS_S.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/112/trunk/script/EMPRESAS_S.sql
+END
+lote_entrada.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/lote_entrada.sql
+END
+tab_funcionario.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/tab_funcionario.sql
+END
+ATUALIZA_GENERATORS.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/ATUALIZA_GENERATORS.SQL
+END
+sp_contas_pagas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/sp_contas_pagas.sql
+END
+usaproduto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/usaproduto.sql
+END
+caixa_movimento_ordem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/caixa_movimento_ordem.sql
+END
+tab_func_novos_campos
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/tab_func_novos_campos
+END
+ETIQUETAS_FORNECEDOR.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/172/trunk/script/ETIQUETAS_FORNECEDOR.sql
+END
+relContasReceberKenko.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/relContasReceberKenko.sql
+END
+REL_DMED_11.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/160/trunk/script/REL_DMED_11.sql
+END
+aviso_ash.sql
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/122/trunk/script/aviso_ash.sql
+END
+relDre.sql
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/5/trunk/script/relDre.sql
+END
+sp_mov_caixa_ordem_sintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa_ordem_sintetico.sql
+END
+sp_contas_a_receber.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/sp_contas_a_receber.sql
+END
+nfalteraVlrExporta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/nfalteraVlrExporta.sql
+END
+sp_cliente_etiqueta.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/sp_cliente_etiqueta.sql
+END
+pag_totais.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/122/trunk/script/pag_totais.sql
+END
+insere_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/insere_estoque.sql
+END
+sp_mov_caixaSintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/sp_mov_caixaSintetico.sql
+END
+sp_contas_recebidas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/sp_contas_recebidas.sql
+END
+zerando_tabelas.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/zerando_tabelas.sql
+END
+trg_novos_socios.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/170/trunk/script/trg_novos_socios.sql
+END
+estoqueFechado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/estoqueFechado.sql
+END
+altera_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/altera_pag.sql
+END
+tab_atualiza.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/tab_atualiza.sql
+END
+CONF_RECEBIMENTO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/153/trunk/script/CONF_RECEBIMENTO.sql
+END
+altera_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/altera_rec.sql
+END
+SP_MOV_CAIXA_DRE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/SP_MOV_CAIXA_DRE.sql
+END
+zerando_tabelas_cupom
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/zerando_tabelas_cupom
+END
+CONFERIR_DET.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/122/trunk/script/CONFERIR_DET.sql
+END
+ra_pcmso.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/script/ra_pcmso.sql
+END
+updatePrecoMinimo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/updatePrecoMinimo.txt
+END
+spestoqueproduto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/spestoqueproduto.sql
+END
+RelSemanaPorProduto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/RelSemanaPorProduto.sql
+END
+TABLE DMED_MENSALIDADE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/139/trunk/script/TABLE%20DMED_MENSALIDADE.sql
+END
+INCLUI_PAG.trg
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/258/trunk/script/INCLUI_PAG.trg
+END
+AUDITORIA_CONTAS_1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/286/trunk/script/AUDITORIA_CONTAS_1.sql
+END
+SQL_TABDEBITO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/159/trunk/script/SQL_TABDEBITO.sql
+END
+citrus_relcompra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/citrus_relcompra.sql
+END
+novoscamposcliente
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/novoscamposcliente
+END
+exception_caixaFechado.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/exception_caixaFechado.sql
+END
+calcula_icms.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/calcula_icms.sql
+END
+fluxoCaixaLinha.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/fluxoCaixaLinha.sql
+END
+estatisticaashfornecedor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/script/estatisticaashfornecedor.sql
+END
+fluxoCaixaVer.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/fluxoCaixaVer.sql
+END
+updateCliFor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/updateCliFor.sql
+END
+ALTERAFAIXA.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/158/trunk/script/ALTERAFAIXA.sql
+END
+trgDataConsolida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/trgDataConsolida.sql
+END
+tabelaservico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/5/trunk/script/tabelaservico.sql
+END
+CancelaBaixaPag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/CancelaBaixaPag.sql
+END
+boleto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/179/trunk/script/boleto.sql
+END
+listaProduto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/listaProduto.sql
+END
+lanca_cont_compra_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/lanca_cont_compra_pag.sql
+END
+sp_estoque_entsai.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/sp_estoque_entsai.sql
+END
+DELETA_COMISSAO.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/DELETA_COMISSAO.sql
+END
+TOTAIS_DMED.sql
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/153/trunk/script/TOTAIS_DMED.sql
+END
+LANCARECEITASAUDE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/121/trunk/script/LANCARECEITASAUDE.sql
+END
+sib_xml.sql
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/122/trunk/script/sib_xml.sql
+END
+CONFERIR_MENSALIDADE.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/154/trunk/script/CONFERIR_MENSALIDADE.sql
+END
+sp_mov_caixa_ordem.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa_ordem.sql
+END
+retornaEstoqueVenda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/retornaEstoqueVenda.sql
+END
+ETIQUETAS_ASH.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/114/trunk/script/ETIQUETAS_ASH.sql
+END
+zerando_tabelas_cupom.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/zerando_tabelas_cupom.sql
+END
+LANCA_REEMBOLSO_VENC.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/115/trunk/script/LANCA_REEMBOLSO_VENC.sql
+END
+gera_nf.sql
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/5/trunk/script/gera_nf.sql
+END
+isere_user.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/isere_user.sql
+END
+lanca_contabil_venda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/lanca_contabil_venda.sql
+END
+relCompraProdutoMes.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/relCompraProdutoMes.sql
+END
+TABLE LAN_DMED.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/139/trunk/script/TABLE%20LAN_DMED.sql
+END
+lista_entradasaida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/lista_entradasaida.sql
+END
+calcula_icms_substituicao.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/script/calcula_icms_substituicao.sql
+END
+novoscamposfaixaetariaDetalhe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/script/novoscamposfaixaetariaDetalhe.txt
+END
+FAIXAS2011.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/122/trunk/script/FAIXAS2011.sql
+END
+sp_mov_caixa_ordemSintetico.sql
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/5/trunk/script/sp_mov_caixa_ordemSintetico.sql
+END
+gera_valor.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/gera_valor.sql
+END
+AUDITORIA_ANA_C_1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/286/trunk/script/AUDITORIA_ANA_C_1.sql
+END
+AUDITORIA_C_P_1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/286/trunk/script/AUDITORIA_C_P_1.sql
+END
+cancelaBaixaRec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/cancelaBaixaRec.sql
+END
+rel_drePlastiferro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/rel_drePlastiferro.sql
+END
+caixaFechadoPag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/caixaFechadoPag.sql
+END
+cancela_movimento_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/script/cancela_movimento_estoque.sql
+END
+sp_calcprmedio_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/script/sp_calcprmedio_estoque.sql
+END
+trgDataConsolidaI.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/trgDataConsolidaI.sql
+END
+valor_no_recebimento.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/121/trunk/script/valor_no_recebimento.sql
+END
+resultadoporproduto.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/resultadoporproduto.sql
+END
+rel_vendaCompra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/rel_vendaCompra.sql
+END
+cliente_etiqueta1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/cliente_etiqueta1.sql
+END
+AVISO_ASH_PDF.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/114/trunk/script/AVISO_ASH_PDF.sql
+END
+ARQUIVO_REMESSA.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/178/trunk/script/ARQUIVO_REMESSA.sql
+END
+tabelamodo.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/tabelamodo.sql
+END
+LANCAPROCSAUDEPROC.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/121/trunk/script/LANCAPROCSAUDEPROC.sql
+END
+relDre_saopedro.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/5/trunk/script/relDre_saopedro.sql
+END
+LANCA_REEMBOLSO_ENTR.sql
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/115/trunk/script/LANCA_REEMBOLSO_ENTR.sql
+END
+insere_contas_pc.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/insere_contas_pc.sql
+END
+valor_na_venda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/121/trunk/script/valor_na_venda.sql
+END
+exclui_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/exclui_pag.sql
+END
+tabelasantos.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/tabelasantos.sql
+END
+retornaEstoqueCompra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/retornaEstoqueCompra.sql
+END
+D_2012.sql
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/293/trunk/script/D_2012.sql
+END
+sp_caixa_itens.sql
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/script/sp_caixa_itens.sql
+END
+trg_altera_estoque.sql
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/script/trg_altera_estoque.sql
+END
+novos_campos_ash.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/259/trunk/script/novos_campos_ash.php
+END
+atualiza_chg.sql
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/atualiza_chg.sql
+END
+dmed_antes_insert2011.sql
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/122/trunk/script/dmed_antes_insert2011.sql
+END
+fluxoentradasaida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/fluxoentradasaida.sql
+END
+mov_estoqueAltera.sql
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/5/trunk/script/mov_estoqueAltera.sql
+END
+novoscamposfaixaetariaDetalhe
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/script/novoscamposfaixaetariaDetalhe
+END
+produtoetiquetacompra.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/produtoetiquetacompra.sql
+END
+UPDATEMOVDET.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/script/UPDATEMOVDET.SQL
+END
+AUDITORIA_C_1.sql
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/286/trunk/script/AUDITORIA_C_1.sql
+END
+lote_saida.sql
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/5/trunk/script/lote_saida.sql
+END
+SP_CR.SQL
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/5/trunk/script/SP_CR.SQL
+END
+dmed_antes2011.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/119/trunk/script/dmed_antes2011.sql
+END
+cancela_estoque_venda.sql
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/5/trunk/script/cancela_estoque_venda.sql
+END
+sp_gera_cobranca.sql
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/5/trunk/script/sp_gera_cobranca.sql
+END
+proibe_exclusao_pag.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/proibe_exclusao_pag.sql
+END
+trgDataConsolidaRec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/trgDataConsolidaRec.sql
+END
+sp_contas_rec_gerais.sql
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/script/sp_contas_rec_gerais.sql
+END
+proibe_exclusao_rec.sql
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/script/proibe_exclusao_rec.sql
+END

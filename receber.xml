@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fcrProcSaude>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>3</ShowCmd>
+    <Flags>2</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1366x768_>258,125,1082,700</NormPos_1366x768_>
+    <NormPos>258,125,1082,700</NormPos>
+    <meDta1_Text>  /  /  </meDta1_Text>
+    <meDta2_Text>  /  /  </meDta2_Text>
+    <meDta3_Text>  /  /  </meDta3_Text>
+    <meDta4_Text>  /  /  </meDta4_Text>
+    <meDta5_Text>  /  /  </meDta5_Text>
+    <meDta6_Text>  /  /  </meDta6_Text>
+    <Emissao1/>
+    <Emissao2/>
+    <meDta1Text>  /  /  </meDta1Text>
+    <meDta2Text>  /  /  </meDta2Text>
+    <meDta3Text>  /  /  </meDta3Text>
+    <meDta4Text>  /  /  </meDta4Text>
+    <meDta5Text>  /  /  </meDta5Text>
+    <meDta6Text>  /  /  </meDta6Text>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>245,125,1069,700</NormPos_1360x768_>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <NormPos_1024x768_>258,125,1082,700</NormPos_1024x768_>
+  </fcrProcSaude>
+</Configuration>

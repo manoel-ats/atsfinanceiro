@@ -1,0 +1,11 @@
+SET TERM ^;
+
+CREATE TRIGGER clientes_codcli_naomexer FOR CLIENTES
+ACTIVE BEFORE UPDATE POSITION 0
+AS
+BEGIN
+    if (new.CODCLIENTE <> old.CODCLIENTE) then 
+      exception CODCLIENTENAOALTERA;
+END^
+
+SET TERM ;^

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Configuration>
+  <fFiltroMov_compra>
+    <FormVersion>0</FormVersion>
+    <ShowCmd>3</ShowCmd>
+    <Flags>2</Flags>
+    <PixelsPerInch>96</PixelsPerInch>
+    <MinMaxPos_1024x768_>-1,-1,-1,-1</MinMaxPos_1024x768_>
+    <MinMaxPos>-1,-1,-1,-1</MinMaxPos>
+    <NormPos_1024x768_>243,67,1047,619</NormPos_1024x768_>
+    <NormPos>243,67,1047,619</NormPos>
+    <ComboBox1_Text/>
+    <edControle_Text/>
+    <meDta1_Text>  /  /  </meDta1_Text>
+    <meDta2_Text>  /  /  </meDta2_Text>
+    <MinMaxPos_1366x768_>-1,-1,-1,-1</MinMaxPos_1366x768_>
+    <NormPos_1366x768_>243,67,1047,619</NormPos_1366x768_>
+    <MinMaxPos_1360x768_>-1,-1,-1,-1</MinMaxPos_1360x768_>
+    <NormPos_1360x768_>247,67,1051,619</NormPos_1360x768_>
+    <ComboBox1Text/>
+    <edControleText/>
+    <meDta1Text>  /  /  </meDta1Text>
+    <meDta2Text>  /  /  </meDta2Text>
+  </fFiltroMov_compra>
+</Configuration>

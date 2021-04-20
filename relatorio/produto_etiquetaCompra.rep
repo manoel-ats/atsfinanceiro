@@ -1,0 +1,376 @@
+object TRpReport
+  GridWidth = 50
+  GridHeight = 50
+  Pagesize = rpPageSizeCustom
+  PagesizeQt = 2
+  PageHeight = 7639
+  PageWidth = 5903
+  PageBackColor = 16777215
+  PreviewWindow = spwMaximized
+  LeftMargin = 822
+  TopMargin = 340
+  RightMargin = 822
+  BottomMargin = 340
+  SubReports = <
+    item
+      SubReport = TRpSubReport0
+    end>
+  DataInfo = <
+    item
+      Alias = 'ETIQUETA'
+      DatabaseAlias = 'SISADMIN'
+      SQL = 
+        'select  '#13#10'         LOJA'#13#10'        , CODPRODUTO1'#13#10'        , PRODUT' +
+        'O1       '#13#10'        , PRECOPROD1   '#13#10'        ,CODPRODUTO2'#13#10'      ' +
+        '  , PRODUTO2       '#13#10'        , PRECOPROD2 '#13#10'        , CODPRODUTO' +
+        '3 '#13#10'        , PRODUTO3'#13#10'        , PRECOPROD3   '#13#10'        ,CODPRO' +
+        'DUTO4        '#13#10#13#10' from PRODUTOETIQUETACOMPRA(:CODMOV) '
+    end>
+  DatabaseInfo = <
+    item
+      Alias = 'SISADMIN'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end
+    item
+      Alias = 'SGE'
+      LoadParams = True
+      LoadDriverParams = True
+      LoginPrompt = False
+      ReportTable = 'REPMAN_REPORTS'
+      ReportSearchField = 'REPORT_NAME'
+      ReportField = 'REPORT'
+      ReportGroupsTable = 'REPMAN_GROUPS'
+      ADOConnectionString = ''
+    end>
+  Params = <
+    item
+      Name = 'CODMOV'
+      AllowNulls = False
+      Value = 7
+      ParamType = rpParamInteger
+      Datasets.Strings = (
+        'ETIQUETA')
+      Description = 'C'#243'digo Movimento'
+      Hint = ''
+      Search = ''
+      ErrorMessage = ''
+      Validation = ''
+    end>
+  StreamFormat = rpStreamText
+  ReportAction = []
+  Type1Font = poHelvetica
+  WFontName = 'Arial'
+  LFontName = 'Helvetica'
+  object TRpSubReport0: TRpSubReport
+    Sections = <
+      item
+        Section = TRpSection0
+      end>
+    Alias = 'ETIQUETA'
+  end
+  object TRpSection0: TRpSection
+    Width = 11906
+    Height = 1530
+    SubReport = TRpSubReport0
+    ChangeBool = False
+    PageRepeat = False
+    SkipPage = False
+    AlignBottom = False
+    SectionType = rpsecdetail
+    Components = <
+      item
+        Component = TRpExpression0
+      end
+      item
+        Component = TRpExpression1
+      end
+      item
+        Component = TRpExpression2
+      end
+      item
+        Component = TRpExpression3
+      end
+      item
+        Component = TRpExpression5
+      end
+      item
+        Component = TRpExpression4
+      end
+      item
+        Component = TRpExpression6
+      end
+      item
+        Component = TRpExpression7
+      end
+      item
+        Component = TRpBarcode0
+      end
+      item
+        Component = TRpBarcode1
+      end
+      item
+        Component = TRpBarcode2
+      end
+      item
+        Component = TRpBarcode3
+      end>
+    HorzDesp = True
+    ExternalTable = 'REPMAN_REPORTS'
+    ExternalField = 'REPORT'
+    ExternalSearchField = 'REPORT_NAME'
+    StreamFormat = rpStreamText
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    ChangeExpression = ''
+    BeginPageExpression = ''
+    ChangeExpression = ''
+    SkipExpreV = ''
+    SkipExpreH = ''
+    SkipToPageExpre = ''
+    BackExpression = ''
+    Stream = {0000000000000000}
+  end
+  object TRpExpression0: TRpExpression
+    Width = 1470
+    Height = 270
+    PosX = 150
+    PosY = 45
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.LOJA'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression1: TRpExpression
+    Width = 1470
+    Height = 270
+    PosX = 6345
+    PosY = 45
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.LOJA'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression2: TRpExpression
+    Width = 1470
+    Height = 270
+    PosX = 3150
+    PosY = 45
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.LOJA'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression3: TRpExpression
+    Width = 1470
+    Height = 270
+    PosX = 8850
+    PosY = 50
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.LOJA'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression5: TRpExpression
+    Width = 1575
+    Height = 264
+    PosX = 3105
+    PosY = 360
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.CODPRODUTO2'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression4: TRpExpression
+    Width = 1575
+    Height = 264
+    PosX = 210
+    PosY = 360
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.CODPRODUTO1'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression6: TRpExpression
+    Width = 1575
+    Height = 264
+    PosX = 6330
+    PosY = 360
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.CODPRODUTO3'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpExpression7: TRpExpression
+    Width = 1575
+    Height = 264
+    PosX = 8880
+    PosY = 360
+    Type1Font = poHelvetica
+    AutoExpand = False
+    AutoContract = False
+    ExportPosition = 0
+    ExportSize = 1
+    ExportDoNewLine = False
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    WFontName = 'Arial'
+    LFontName = 'Helvetica'
+    Expression = 'ETIQUETA.CODPRODUTO4'
+    DisplayFormat = ''
+    ExportDisplayFormat = ''
+    AgIniValue = '0'
+    ExportExpression = ''
+  end
+  object TRpBarcode0: TRpBarcode
+    Width = 1290
+    Height = 345
+    PosX = 255
+    PosY = 600
+    Modul = 10
+    Ratio = 2.000000000000000000
+    Typ = bcCodeCodabar
+    Checksum = True
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    DisplayFormat = ''
+    Expression = 'ETIQUETA.CODPRODUTO1'
+  end
+  object TRpBarcode1: TRpBarcode
+    Width = 1350
+    Height = 345
+    PosX = 3105
+    PosY = 600
+    Modul = 10
+    Ratio = 2.000000000000000000
+    Typ = bcCodeEAN8
+    Checksum = True
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    DisplayFormat = ''
+    Expression = 'ETIQUETA.CODPRODUTO2'
+  end
+  object TRpBarcode2: TRpBarcode
+    Width = 1560
+    Height = 345
+    PosX = 6345
+    PosY = 600
+    Modul = 10
+    Ratio = 2.000000000000000000
+    Checksum = True
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    DisplayFormat = ''
+    Expression = 'ETIQUETA.CODPRODUTO3'
+  end
+  object TRpBarcode3: TRpBarcode
+    Width = 1455
+    Height = 345
+    PosX = 8895
+    PosY = 600
+    Modul = 10
+    Ratio = 2.000000000000000000
+    Typ = bcCodeCodabar
+    Checksum = True
+    PrintCondition = ''
+    DoBeforePrint = ''
+    DoAfterPrint = ''
+    DisplayFormat = ''
+    Expression = 'ETIQUETA.CODPRODUTO4'
+  end
+end
